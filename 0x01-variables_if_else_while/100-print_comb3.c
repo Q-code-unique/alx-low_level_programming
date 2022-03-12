@@ -4,51 +4,61 @@
 
 #include <time.h>
 
+
+
 /**
+ * main - Entry point
  *
- *  * main - Entry point
- *
- *   *
- *
- *    * Return: Always 0 (Success)
- *
- *     */
+ * Return: Always 0 (Success)
+ */
+
+
 
 int main(void)
 
 {
 
-		int d;
+		int d, p;
 
 
 
-			for (d = 0; d < 90; d++)
+			for (d = '0'; d < '9'; d++)
 
 					{
 
-								for ()
+								for (p = d + 1; p <= '9'; p++)
 
 											{
 
-															putchar((d / 10) + '0');
+															if (p != d)
 
-																		putchar((d % 10) + '0');
+																			{
 
-																				}
+																								putchar(d);
 
-										if (d != 89)
+																												putchar(p);
 
-													{
 
-																	putchar(',');
 
-																				putchar(' ');
+																																if (d == '8' && p == '9')
 
-																						}
+																																						continue;
 
-											}
+
+
+																																				putchar(',');
+
+																																								putchar(' ');
+
+																																											}
+
+																	}
+
+									}
 
 				putchar('\n');
+
+
 
 					return (0);
 
